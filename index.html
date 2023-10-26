@@ -5,9 +5,15 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Consultoria en estructuras metalicas y diseño estructural">
   <link rel="shortcut icon" href="./img/comercializador.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./Style.css" />
   <title>Constructora</title>
+  <link rel="stylesheet" href="css/Style.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <script src="./javascript/servicios.js" defer></script>
+  <script src="./javascript/colaboradores.js" defer></script>
+  <script src="./javascript/modal.js" defer></script>
+  <script src="./javascript/botones.js" defer></script>
 </head>
 
 <header class="header">
@@ -18,15 +24,19 @@
 
   <div class="header__contenedor--button">
     <button class="header__button">HOME</button>
-    <button class="header__button">SERVICIOS</button>
-    <button class="header__button">COLABORADORES</button>
+    <button id="ver-mas-btn" class="header__button">VER MÁS</button>
+
+    <button class="header__button boton-servicio" id="boton-servicio">SERVICIOS</button>
+    <button class="header__button boton-colaboradores" id="boton-colaboradores">COLABORADORES</button>
     <a href="#footer"><button class="header__button "> <img class="header__button--flecha "
           src="./img/flecha-hacia-abajo.png" alt="flecha__abajo"></button> </a>
   </div>
 </header>
 
+<!--BODYY-->
+
 <body>
-  <section class="section"  id="home">
+  <section class="section" id="home">
     <div class="section__contenedor">
       <h2 class="section__nombre">Construcciones O&R</h2>
       <p class="section__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nulla
@@ -45,74 +55,18 @@
   </section>
 
   <!---SECCION #2-->
-  <section class="section__servicios">
+  <section class="section__servicios" id="servicios">
     <h2 class="section__title">
       SERVICIOS
     </h2>
     <div class="contenedor">
-      <div class="section__contenedor">
-        <h3 class="section__title--servicios">Asesorias</h3>
-        <p class="section__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum minus in
-          architecto optio quos dolor quas provident qui, quae unde eum eveniet, doloremque et enim corrupti corporis
-          quaerat a. </p>
-      </div>
-      <div class="section__contenedor">
-        <h3 class="section__title--servicios">Diseño</h3>
-        <p class="section__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum minus in
-          architecto optio quos dolor quas provident qui, quae unde eum eveniet, doloremque et enim corrupti corporis
-          quaerat a. </p>
-      </div>
-
-      <div class="section__contenedor">
-        <h3 class="section__title--servicios">Beneficios</h3>
-        <p class="section__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum minus in
-          architecto optio quos dolor quas provident qui, quae unde eum eveniet, doloremque et enim corrupti corporis
-          quaerat a. </p>
-      </div>
-      <div class="section__contenedor">
-        <h3 class="section__title--servicios">Cargas</h3>
-        <p class="section__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum minus in
-          architecto optio quos dolor quas provident qui, quae unde eum eveniet, doloremque et enim corrupti corporis
-          quaerat a. </p>
-      </div>
-
-
-
-      <div class="section__contenedor">
-        <h3 class="section__title--servicios">Mantenimiento</h3>
-        <p class="section__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum minus in
-          architecto optio quos dolor quas provident qui, quae unde eum eveniet, doloremque et enim corrupti corporis
-          quaerat a. </p>
-      </div>
-      <div class="section__contenedor">
-        <h3 class="section__title--servicios">Construccion</h3>
-        <p class="section__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum minus in
-          architecto optio quos dolor quas provident qui, quae unde eum eveniet, doloremque et enim corrupti corporis
-          quaerat a. </p>
-      </div>
     </div>
   </section>
 
-
-  <section class="section__colaboradores">
+  <!--- SECCION COLABORADORES-->
+  <section class="section__colaboradores" id="seccion-colaboradores">
     <h2 class="section__title">COLABORADORES</h2>
-    <div class="contenedor__colaboradores">
-      <div class="section__servicios">
-        <img class="imagen__colaboradores" src="./img/pngwing.com.png" alt="" class="section__imagen">
-        <h4 class="section__parrafo">Daniel</h4>
-        <h4 class="section__parrafo">Especialista En Diseño<h4>
-      </div>
-      <div class="section__servicios">
-        <img class="imagen__colaboradores" src="./img/pngwing.com2.png" alt="" class="section__imagen">
-        <h4 class="section__parrafo">Juan</h4>
-        <h4 class="section__parrafo">Analista de Estructuras<h4>
-      </div>
-      <div class="section__servicios">
-        <img class="imagen__colaboradores" src="./img/pngwing.com3.png" alt="" class="section__imagen">
-        <h4 class="section__parrafo">Oscar</h4>
-        <h4 class="section__parrafo">Ingeniero Residente<h4>
-      </div>
-    </div>
+    <div class="contenedor__colaboradores"></div>
   </section>
   <!-- </section> 
   
